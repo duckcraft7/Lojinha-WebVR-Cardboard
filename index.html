@@ -3,20 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR Open Store - Embutida</title>
+    <title>VR Open Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0a0a0c; color: #eee; overflow-x: hidden; }
+        body { background: #0a0a0c; color: #eee; font-family: sans-serif; overflow-x: hidden; }
         .card { background: #16161e; border: 1px solid #222; transition: 0.3s; }
-        /* Estilo para o Player de Jogo */
-        #game-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            background: black;
-            z-index: 9999;
-        }
+        .card:hover { border-color: #3b82f6; transform: translateY(-5px); }
+        #game-overlay { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: black; z-index: 9999; }
         iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
@@ -24,68 +17,59 @@
 
     <div id="store-ui">
         <header class="text-center py-10">
-            <h1 class="text-4xl font-black text-blue-500">VR HUB GITHUB</h1>
-            <p class="text-gray-500">Jogue direto no navegador</p>
+            <h1 class="text-4xl font-black text-blue-500 uppercase tracking-tighter">VR HUB GITHUB</h1>
+            <p class="text-gray-500 mt-2">Jogos WebXR para Google Cardboard & Android 15</p>
         </header>
 
-        <main id="loja" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <main id="lista-jogos" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             </main>
     </div>
 
     <div id="game-overlay">
-        <button onclick="fecharJogo()" class="fixed top-4 left-4 z-[10000] bg-red-600 px-4 py-2 rounded-full font-bold shadow-lg">
+        <button onclick="fecharJogo()" class="fixed top-4 left-4 z-[10000] bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold shadow-2xl">
             ✕ SAIR DO JOGO
         </button>
-        <iframe id="game-frame" 
-                allow="xr-spatial-tracking; accelerometer; gyroscope; magnetometer; mobile-sensor; fullscreen">
-        </iframe>
+        <iframe id="game-frame" allow="xr-spatial-tracking; accelerometer; gyroscope; magnetometer; mobile-sensor; fullscreen"></iframe>
     </div>
 
     <script>
-        const jogos = [
-            {
-                titulo: "A-Blast",
-                capa: "https://aframe.io/a-blast/assets/images/thumbnail.png",
-                url: "https://aframe.io/a-blast/"
-            },
-            {
-                titulo: "XRPunch",
-                capa: "https://img.itch.zone/aW1nLzY1Mjg5OTIucG5n/315x250%23c/8%2B9%2B9%2B.png",
-                url: "https://daydev.itch.io/xrpunch"
-            },
-            {
-                titulo: "Moon Rider",
-                capa: "https://moonrider.xyz/assets/ui/logo.png",
-                url: "https://moonrider.xyz/"
-            }
-        ];
+        async function carregarLoja() {
+            try {
+                const response = await fetch('games.json');
+                const jogos = await response.json();
+                const container = document.getElementById('lista-jogos');
 
-        function renderizar() {
-            const container = document.getElementById('loja');
-            container.innerHTML = jogos.map(j => `
-                <div class="card rounded-2xl overflow-hidden p-4">
-                    <img src="${j.capa}" class="rounded-xl h-40 w-full object-cover mb-4">
-                    <h2 class="text-xl font-bold mb-4">${j.titulo}</h2>
-                    <button onclick="abrirJogo('${j.url}')" class="w-full bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-500 transition">
-                        JOGAR NA LOJA
-                    </button>
-                </div>
-            `).join('');
+                container.innerHTML = jogos.map(jogo => `
+                    <div class="card rounded-2xl overflow-hidden p-4 flex flex-col">
+                        <img src="${jogo.capa}" class="rounded-xl h-48 w-full object-cover mb-4" alt="${jogo.titulo}">
+                        <div class="flex-grow">
+                            <h2 class="text-2xl font-bold text-white">${jogo.titulo}</h2>
+                            <p class="text-gray-400 text-sm mt-2 mb-4">${jogo.desc}</p>
+                        </div>
+                        <button onclick="abrirJogo('${jogo.url}')" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl font-bold transition">
+                            JOGAR AGORA
+                        </button>
+                    </div>
+                `).join('');
+            } catch (erro) {
+                console.error("Erro ao carregar o games.json:", erro);
+                document.getElementById('lista-jogos').innerHTML = "<p class='text-red-500 text-center col-span-full'>Erro ao carregar lista de jogos. Verifique o arquivo games.json.</p>";
+            }
         }
 
         function abrirJogo(url) {
-            document.getElementById('store-ui').style.display = 'none';
+            document.getElementById('store-ui').classList.add('hidden');
             document.getElementById('game-overlay').style.display = 'block';
             document.getElementById('game-frame').src = url;
         }
 
         function fecharJogo() {
-            document.getElementById('store-ui').style.display = 'block';
+            document.getElementById('store-ui').classList.remove('hidden');
             document.getElementById('game-overlay').style.display = 'none';
-            document.getElementById('game-frame').src = ''; // Para o jogo parar de rodar no fundo
+            document.getElementById('game-frame').src = ''; 
         }
 
-        renderizar();
+        carregarLoja();
     </script>
 </body>
 </html>
