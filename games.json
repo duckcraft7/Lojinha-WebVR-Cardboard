@@ -6,12 +6,6 @@
     "url": "https://aframe.io/a-blast/"
   },
   {
-    "titulo": "Moon Rider",
-    "desc": "O Beat Saber do navegador. Milhares de músicas para jogar.",
-    "capa": "https://moonrider.xyz/assets/ui/logo.png",
-    "url": "https://moonrider.xyz/"
-  },
-  {
     "titulo": "Spinosaurus VR",
     "desc": "Fique frente a frente com um dinossauro em tamanho real.",
     "capa": "https://img.itch.zone/aW1nLzI4ODU5ODAucG5n/315x250%23c/0%2B%2B%2B%2B%2B.png",
@@ -52,12 +46,6 @@
     "desc": "Explore um cenário de neve imersivo e calmo.",
     "capa": "https://img.itch.zone/aW1nLzEyODU4OTAucG5n/315x250%23c/W%2B%2B%2B%2B%2B.png",
     "url": "https://mimekunst.itch.io/winter-solitude-vr"
-  },
-  {
-    "titulo": "Open Saber",
-    "desc": "Outra opção de ritmo com sabres de luz open source.",
-    "capa": "https://img.itch.zone/aW1nLzExODU4OTAucG5n/315x250%23c/S%2B%2B%2B%2B%2B.png",
-    "url": "https://leandro-dreamer.itch.io/open-saber"
   },
   {
     "titulo": "Dino Care VR",
