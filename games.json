@@ -1,58 +1,122 @@
 [
   {
     "titulo": "A-Blast",
-    "desc": "Defenda-se de robôs espaciais.",
+    "desc": "Tiroteio arcade clássico. Atire nos robôs apenas olhando!",
     "capa": "https://aframe.io/a-blast/assets/images/thumbnail.png",
-    "url": "https://aframe.io/a-blast/",
-    "cat": "Ação"
+    "url": "https://aframe.io/a-blast/"
   },
   {
     "titulo": "Moon Rider",
-    "desc": "Jogo de ritmo musical (estilo Beat Saber).",
+    "desc": "O Beat Saber do navegador. Milhares de músicas para jogar.",
     "capa": "https://moonrider.xyz/assets/ui/logo.png",
-    "url": "https://moonrider.xyz/",
-    "cat": "Ritmo"
+    "url": "https://moonrider.xyz/"
   },
   {
     "titulo": "Spinosaurus VR",
-    "desc": "Encontre um dinossauro em tamanho real!",
+    "desc": "Fique frente a frente com um dinossauro em tamanho real.",
     "capa": "https://img.itch.zone/aW1nLzI4ODU5ODAucG5n/315x250%23c/0%2B%2B%2B%2B%2B.png",
-    "url": "https://polybean.itch.io/spinosaurus-vr",
-    "cat": "Exploração"
+    "url": "https://polybean.itch.io/spinosaurus-vr"
   },
   {
-    "titulo": "Barista VR",
-    "desc": "Simulador de cafeteria em VR.",
-    "capa": "https://img.itch.zone/aW1nLzI1ODU4OTAucG5n/315x250%23c/X%2F%2F%2F%2F%2F.png",
-    "url": "https://mgeers.itch.io/barista-vr",
-    "cat": "Simulação"
+    "titulo": "Planets VR",
+    "desc": "Veja os planetas do sistema solar em escala gigante.",
+    "capa": "https://img.itch.zone/aW1nLzM3MTg4MjUucG5n/315x250%23c/8%2B9%2B9%2B.png",
+    "url": "https://kodub.itch.io/planets-by-earth-vr"
   },
   {
-    "titulo": "Towermax Fitness",
-    "desc": "Treino de boxe e reação no navegador.",
-    "capa": "https://www.towermax.fitness/wp-content/uploads/2020/05/towermax-fitness-logo-1.png",
-    "url": "https://www.towermax.fitness/reaction/",
-    "cat": "Esporte"
-  },
-  {
-    "titulo": "Back to Space",
-    "desc": "Tiroteio espacial clássico.",
-    "capa": "https://img.itch.zone/aW1nLzIxODU4OTAucG5n/315x250%23c/A%2B%2B%2B%2B%2B.png",
-    "url": "https://v-play.itch.io/back-to-space-vr",
-    "cat": "Ação"
+    "titulo": "Fit'n Punch XR",
+    "desc": "Treino de boxe em VR. Ótimo para suar a camisa!",
+    "capa": "https://img.itch.zone/aW1nLzY1Mjg5OTIucG5n/315x250%23c/8%2B9%2B9%2B.png",
+    "url": "https://daydev.itch.io/xrpunch"
   },
   {
     "titulo": "The Hall",
-    "desc": "Museu de arte virtual em WebXR.",
+    "desc": "Um museu de arte virtual elegante e relaxante.",
     "capa": "https://aframe.io/images/showcase/thehall.png",
-    "url": "https://thehall.xyz/",
-    "cat": "Museu"
+    "url": "https://thehall.xyz/"
   },
   {
-    "titulo": "Solar System VR",
-    "desc": "Explore os planetas do sistema solar.",
-    "capa": "https://img.itch.zone/aW1nLzM3MTg4MjUucG5n/315x250%23c/8%2B9%2B9%2B.png",
-    "url": "https://kodub.itch.io/planets-by-earth-vr",
-    "cat": "Educativo"
+    "titulo": "Barista Express",
+    "desc": "Simulador de cafeteria. Prepare cafés em VR!",
+    "capa": "https://img.itch.zone/aW1nLzI1ODU4OTAucG5n/315x250%23c/X%2F%2F%2F%2F%2F.png",
+    "url": "https://mgeers.itch.io/barista-vr"
+  },
+  {
+    "titulo": "Carnival Shooter",
+    "desc": "Tiro ao alvo clássico de parques de diversão.",
+    "capa": "https://img.itch.zone/aW1nLzI0ODU4OTAucG5n/315x250%23c/B%2B%2B%2B%2B%2B.png",
+    "url": "https://pierotechnical.itch.io/carnival-shooter-vr"
+  },
+  {
+    "titulo": "Winter Solitude",
+    "desc": "Explore um cenário de neve imersivo e calmo.",
+    "capa": "https://img.itch.zone/aW1nLzEyODU4OTAucG5n/315x250%23c/W%2B%2B%2B%2B%2B.png",
+    "url": "https://mimekunst.itch.io/winter-solitude-vr"
+  },
+  {
+    "titulo": "Open Saber",
+    "desc": "Outra opção de ritmo com sabres de luz open source.",
+    "capa": "https://img.itch.zone/aW1nLzExODU4OTAucG5n/315x250%23c/S%2B%2B%2B%2B%2B.png",
+    "url": "https://leandro-dreamer.itch.io/open-saber"
+  },
+  {
+    "titulo": "Dino Care VR",
+    "desc": "Seja um veterinário de dinossauros!",
+    "capa": "https://img.itch.zone/aW1nLzEwODU4OTAucG5n/315x250%23c/D%2B%2B%2B%2B%2B.png",
+    "url": "https://jacob-ibanez.itch.io/dino-care-vr"
+  },
+  {
+    "titulo": "Rocketeer Training",
+    "desc": "Treine voo com uma mochila a jato no espaço.",
+    "capa": "https://img.itch.zone/aW1nLzE1ODU4OTAucG5n/315x250%23c/R%2B%2B%2B%2B%2B.png",
+    "url": "https://malcolmnixon.itch.io/rocketeer-training"
+  },
+  {
+    "titulo": "Vertigo Maze",
+    "desc": "Cuidado para não cair! Um labirinto nas alturas.",
+    "capa": "https://img.itch.zone/aW1nLzE2ODU4OTAucG5n/315x250%23c/M%2B%2B%2B%2B%2B.png",
+    "url": "https://malcolmnixon.itch.io/vertigo-maze"
+  },
+  {
+    "titulo": "Slap A Cube",
+    "desc": "Acerte os cubos o mais rápido que puder.",
+    "capa": "https://img.itch.zone/aW1nLzE3ODU4OTAucG5n/315x250%23c/C%2B%2B%2B%2B%2B.png",
+    "url": "https://protofun.itch.io/slap-a-cube-webxr"
+  },
+  {
+    "titulo": "RaVR DJ",
+    "desc": "Seja o DJ da sua própria festa virtual.",
+    "capa": "https://img.itch.zone/aW1nLzE4ODU4OTAucG5n/315x250%23c/J%2B%2B%2B%2B%2B.png",
+    "url": "https://sorskoot.itch.io/ravr"
+  },
+  {
+    "titulo": "Storage Space 13",
+    "desc": "Um puzzle espacial onde você precisa mover caixas.",
+    "capa": "https://img.itch.zone/aW1nLzE5ODU4OTAucG5n/315x250%23c/P%2B%2B%2B%2B%2B.png",
+    "url": "https://sorskoot.itch.io/storage-space-13"
+  },
+  {
+    "titulo": "Space Rocks",
+    "desc": "Atire em asteroides para sobreviver no espaço profundo.",
+    "capa": "https://img.itch.zone/aW1nLzIwODU4OTAucG5n/315x250%23c/A%2B%2B%2B%2B%2B.png",
+    "url": "https://fantarama.itch.io/neon-missile-3d"
+  },
+  {
+    "titulo": "Cyber Shooter",
+    "desc": "Escape da facilidade atirando em drones inimigos.",
+    "capa": "https://img.itch.zone/aW1nLzIxODU4OTAucG5n/315x250%23c/S%2B%2B%2B%2B%2B.png",
+    "url": "https://nkast.itch.io/alienexterminator"
+  },
+  {
+    "titulo": "Krossa VR",
+    "desc": "Destrua vidros e objetos em um ambiente de física realista.",
+    "capa": "https://img.itch.zone/aW1nLzIyODU4OTAucG5n/315x250%23c/G%2B%2B%2B%2B%2B.png",
+    "url": "https://kodub.itch.io/krossa-vr"
+  },
+  {
+    "titulo": "Konterball",
+    "desc": "Ping Pong em VR contra a parede ou contra o computador.",
+    "capa": "https://experiments.withgoogle.com/konterball/assets/img/share-image.jpg",
+    "url": "https://konterball.com/"
   }
 ]
