@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "A-Blast",
+    "desc": "Defenda-se de robôs espaciais.",
+    "capa": "https://aframe.io/a-blast/assets/images/thumbnail.png",
+    "url": "https://aframe.io/a-blast/",
+    "cat": "Ação"
+  },
+  {
+    "titulo": "Moon Rider",
+    "desc": "Jogo de ritmo musical (estilo Beat Saber).",
+    "capa": "https://moonrider.xyz/assets/ui/logo.png",
+    "url": "https://moonrider.xyz/",
+    "cat": "Ritmo"
+  },
+  {
+    "titulo": "Spinosaurus VR",
+    "desc": "Encontre um dinossauro em tamanho real!",
+    "capa": "https://img.itch.zone/aW1nLzI4ODU5ODAucG5n/315x250%23c/0%2B%2B%2B%2B%2B.png",
+    "url": "https://polybean.itch.io/spinosaurus-vr",
+    "cat": "Exploração"
+  },
+  {
+    "titulo": "Barista VR",
+    "desc": "Simulador de cafeteria em VR.",
+    "capa": "https://img.itch.zone/aW1nLzI1ODU4OTAucG5n/315x250%23c/X%2F%2F%2F%2F%2F.png",
+    "url": "https://mgeers.itch.io/barista-vr",
+    "cat": "Simulação"
+  },
+  {
+    "titulo": "Towermax Fitness",
+    "desc": "Treino de boxe e reação no navegador.",
+    "capa": "https://www.towermax.fitness/wp-content/uploads/2020/05/towermax-fitness-logo-1.png",
+    "url": "https://www.towermax.fitness/reaction/",
+    "cat": "Esporte"
+  },
+  {
+    "titulo": "Back to Space",
+    "desc": "Tiroteio espacial clássico.",
+    "capa": "https://img.itch.zone/aW1nLzIxODU4OTAucG5n/315x250%23c/A%2B%2B%2B%2B%2B.png",
+    "url": "https://v-play.itch.io/back-to-space-vr",
+    "cat": "Ação"
+  },
+  {
+    "titulo": "The Hall",
+    "desc": "Museu de arte virtual em WebXR.",
+    "capa": "https://aframe.io/images/showcase/thehall.png",
+    "url": "https://thehall.xyz/",
+    "cat": "Museu"
+  },
+  {
+    "titulo": "Solar System VR",
+    "desc": "Explore os planetas do sistema solar.",
+    "capa": "https://img.itch.zone/aW1nLzM3MTg4MjUucG5n/315x250%23c/8%2B9%2B9%2B.png",
+    "url": "https://kodub.itch.io/planets-by-earth-vr",
+    "cat": "Educativo"
+  }
+]
